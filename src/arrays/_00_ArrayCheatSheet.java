@@ -25,7 +25,9 @@ public class _00_ArrayCheatSheet {
 			moreIntegers[i]=new Random().nextInt(50);
 		}
 		//8. without printing the entire array, print only the smallest number in the array
-		System.out.println(moreIntegers[0]);
+		for (int i = 0; i < moreIntegers.length; i++) {
+			
+		}
 		//9 print the entire array to see if step 8 was correct
 		for (int i = 0; i < moreIntegers.length; i++) {
 			System.out.println(moreIntegers[i]);
