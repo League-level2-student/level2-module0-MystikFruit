@@ -4,6 +4,8 @@ import java.util.Random;
 
 public class _00_ArrayCheatSheet {
 	public static void main(String[] args) {
+		int num = 0;
+		int num2 = 0;
 		//1. make an array of 5 Strings
 		String[] colors = {"red", "blue", "yellow", "green", "pink"};
 		//2. print the third element in the array
@@ -26,12 +28,25 @@ public class _00_ArrayCheatSheet {
 		}
 		//8. without printing the entire array, print only the smallest number in the array
 		for (int i = 0; i < moreIntegers.length; i++) {
-			
+			if(i==0) {
+			num = moreIntegers[i];	
+			} else if(moreIntegers[i]<num) {
+			num = moreIntegers[i];
+			}
 		}
+		System.out.println("lowest " + num);
 		//9 print the entire array to see if step 8 was correct
 		for (int i = 0; i < moreIntegers.length; i++) {
 			System.out.println(moreIntegers[i]);
 		}
 		//10. print the largest number in the array.
+		for (int i = 0; i < moreIntegers.length; i++) {
+			if(i==0) {
+			num2 = moreIntegers[i];	
+			} else if(moreIntegers[i]>num2) {
+			num2 = moreIntegers[i];
+			}
+		}
+		System.out.println("greatest " + num2);
 	}
 }
